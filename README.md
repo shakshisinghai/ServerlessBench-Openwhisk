@@ -83,7 +83,16 @@ Data analysis
 ![image](https://user-images.githubusercontent.com/37688219/190932138-56150da9-13d2-452d-ada8-783f145298ae.png)
 
 
-### Data transfer costs
-### Startup breakdown
+### Test 3: [Data transfer costs](https://github.com/SJTU-IPADS/ServerlessBench/tree/master/Testcase5-Data-transfer-costs/OpenWhisk)
+This test case presents a Node.js serverless application which transfers images with different sizes (the payload size) between two functions.
+Sizesdic=(0 1024 5120 10240 15360 20480 25600 30720 35840 40960 46080 51200)
+
+###  Test 4 :Startup breakdown
+Detailed breakdown of the startup latency of four functions in ServerlessBench: PythonHello, Java-Hello, Python-Django and Java-ImageResize
+
+Results :
+* optimize the startup latency by holding or caching the finished sandboxes on the platform to avoid long latency incurred by cold start for every request. 
+* However, the finished function instances can remain in hot or warm state only for a short period of time before they cool down, because the platform cannot predict when will a next request arrive, and keeping idle sandboxes wastes platform resources
+
 ### Concurrent startup
 ### Stateless costs
