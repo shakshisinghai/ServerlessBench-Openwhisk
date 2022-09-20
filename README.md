@@ -96,3 +96,7 @@ Results :
 
 ### Concurrent startup
 ### Stateless costs
+
+
+Other tests links:
+https://github.com/i13tum/openwhisk-bench/tree/626c90d8b3f7deba06e233b3ed6013ae9f08f8cf
